@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+  }
+  
+  .shimmer-card{
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 350px;
+    background-color: #9fa4b1;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: scale(0.98);
+  background-color: #e0f2fe;
+}
+
+.restaurant-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.restaurant-card__content {
+  padding: 15px;
+  text-align: center;
+}
+
+.restaurant-card__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-card__details,
+.restaurant-card__cuisines,
+.restaurant-card__location,
+.restaurant-card__cost {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.promoted-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
