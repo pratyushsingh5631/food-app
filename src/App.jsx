@@ -24,7 +24,7 @@ function App() {
 //  authentication 
 useEffect(()=>{
   const data={
-    name: "Manas Kumar",
+    name: "Pratyush Singh",
   };
   setUserName(data.name);
 },[]);
